@@ -1,6 +1,7 @@
 def word(num):
     print(num, end="")
 
+
 word("8")
 word("8")
 word("0")
