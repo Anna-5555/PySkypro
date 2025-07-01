@@ -3,3 +3,4 @@ numbers = list(range(18, 1, -4))
 
 # Выводим список
 print(numbers)
+
