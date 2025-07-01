@@ -17,4 +17,3 @@ print(month_to_season(5))   # Весна
 print(month_to_season(8))   # Лето
 print(month_to_season(11))  # Осень
 print(month_to_season(13))  # Неверный номер месяца
-
