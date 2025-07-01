@@ -12,4 +12,3 @@ def fizz_buzz(n):
 
 # Пример использования
 fizz_buzz(10)
-
