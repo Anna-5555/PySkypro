@@ -15,4 +15,3 @@ print(f"Отправление {mail.track} из {mail.from_address.index},"
       f" в {mail.to_address.index}, {mail.to_address.city}, "
       f"{mail.to_address.street}, {mail.to_address.house} - "
       f"{mail.to_address.apartment}. Стоимость {mail.cost} рублей.")
-

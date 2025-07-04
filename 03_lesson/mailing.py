@@ -5,4 +5,3 @@ class Mailing:
         self.from_address = from_address  # Адрес отправителя (объект Address)
         self.cost = cost                  # Стоимость (число)
         self.track = track                # Трек-номер (строка)
-

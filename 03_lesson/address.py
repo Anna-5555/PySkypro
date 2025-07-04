@@ -5,4 +5,3 @@ class Address:
         self.street = street    # Улица
         self.house = house      # Дом
         self.apartment = apartment  # Квартира
-

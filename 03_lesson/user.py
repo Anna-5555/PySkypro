@@ -11,4 +11,3 @@ class User:
 
     def print_full_name(self):
         print("Полное имя:", self.first_name, self.last_name)
-
