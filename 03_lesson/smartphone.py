@@ -3,3 +3,4 @@ class Smartphone:
         self.brand = brand          # Марка телефона
         self.model = model          # Модель телефона
         self.phone_number = phone_number  # Номер телефона ("+79...")
+

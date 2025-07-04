@@ -13,3 +13,4 @@ catalog.append(Smartphone("OnePlus", "11 Pro", "+79567890123"))
 # Выводим каталог в заданном формате
 for phone in catalog:
     print(f"{phone.brand} - {phone.model}. {phone.phone_number}")
+
