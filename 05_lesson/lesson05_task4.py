@@ -23,15 +23,11 @@ search_input.send_keys("SuperSecretPassword!")
 sleep(2)
 
 # Находим кнопку по классу и кликаем
-try:
-    button = driver.find_element(By.CSS_SELECTOR, "i")
-    button.click()
-    print("✅ Кнопка успешно нажата!")
-except Exception as e:
-    print(f"❌ Ошибка: {e}")
+button = driver.find_element(By.CSS_SELECTOR, "i")
+button.click()
 sleep(5)
 
-message = driver.find_element(By.CSS_SELECTOR, '[data-alert=""]')
+message = driver.find_element(By.CSS_SELECTOR, '#flash.flash.success')
 print_message = message.text
 print(print_message)
 

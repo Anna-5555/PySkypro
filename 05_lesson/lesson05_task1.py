@@ -11,11 +11,5 @@ driver.maximize_window()     # открыть окно по размеру эк�
 driver.get("http://uitestingplayground.com/classattr")
 
 # Находим кнопку по классу и кликаем
-try:
-    button = driver.find_element(By.CSS_SELECTOR, ".btn-primary.btn-test")
-    button.click()
-    print("✅ Кнопка успешно нажата!")
-except Exception as e:
-    print(f"❌ Ошибка: {e}")
-
-sleep(20)
+button = driver.find_element(By.CSS_SELECTOR, ".btn-primary.btn-test")
+button.click()
