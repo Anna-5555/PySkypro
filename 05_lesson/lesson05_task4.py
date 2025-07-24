@@ -23,9 +23,9 @@ search_input.send_keys("SuperSecretPassword!")
 sleep(2)
 
 # Находим кнопку по классу и кликаем
-button = driver.find_element(By.CSS_SELECTOR, "i")
+button = driver.find_element(By.CSS_SELECTOR, "i.fa.fa-2x.fa-sign-in")
 button.click()
-sleep(5)
+sleep(3)
 
 message = driver.find_element(By.CSS_SELECTOR, '#flash.flash.success')
 print_message = message.text
