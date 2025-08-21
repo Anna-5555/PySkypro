@@ -31,4 +31,3 @@ def test_slow_calculator():
     assert result == "15"
 
     driver.quit()
-
