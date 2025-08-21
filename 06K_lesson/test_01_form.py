@@ -50,3 +50,4 @@ def test_form_validation():
         assert "alert-success" in element.get_attribute("class")
 
     driver.quit()
+

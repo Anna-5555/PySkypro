@@ -23,10 +23,12 @@ def test_slow_calculator():
 
     # Ожидание результата
     wait = WebDriverWait(driver, 46)
-    wait.until(EC.text_to_be_present_in_element((By.CLASS_NAME, "screen"), "15"))
+    wait.until(EC.text_to_be_present_in_element(
+        (By.CLASS_NAME, "screen"), "15"))
 
     # Проверка
     result = driver.find_element(By.CLASS_NAME, "screen").text
     assert result == "15"
 
     driver.quit()
+

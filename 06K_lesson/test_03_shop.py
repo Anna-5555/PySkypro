@@ -41,6 +41,4 @@ def test_shopping_cart_total():
     total_text = driver.find_element(By.CLASS_NAME, "summary_total_label").text
     assert "58.29" in total_text
 
-    print("Тест успешно пройден!")
-
     driver.quit()
