@@ -18,4 +18,3 @@ class MainPage:
     def go_to_cart(self):
         self.driver.find_element(By.CLASS_NAME, "shopping_cart_link").click()
         return self
-

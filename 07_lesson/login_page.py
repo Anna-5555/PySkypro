@@ -26,4 +26,3 @@ class LoginPage:
                 .enter_username("standard_user")
                 .enter_password("secret_sauce")
                 .click_login())
-

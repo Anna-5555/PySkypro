@@ -37,4 +37,3 @@ class TestShopping:
 
         # Проверка
         assert total_amount == "58.29"
-

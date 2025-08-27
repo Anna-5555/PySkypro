@@ -35,4 +35,3 @@ class CheckoutPage:
         )
         total_text = self.driver.find_element(By.CLASS_NAME, "summary_total_label").text
         return total_text.replace("Total: $", "")
-
