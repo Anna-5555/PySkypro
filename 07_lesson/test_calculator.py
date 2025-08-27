@@ -1,6 +1,6 @@
 import pytest
 from selenium import webdriver
-from pages.calculator_page import CalculatorPage
+from calculator_page import CalculatorPage
 
 
 class TestCalculator:
