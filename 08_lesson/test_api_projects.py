@@ -2,7 +2,7 @@ import requests
 import pytest
 
 BASE_URL = 'https://ru.yougile.com/api-v2/'
-API_KEY = "p5H7p9bR8N-WPBCwYxX9IDl6Kdpdx-gebNqBiw0KBDvn2Gvv0yQ1ntRn0dEWsBIs"  # Здесь укажите ваш реальный токен API
+API_KEY = "My_Key"  # Здесь укажите ваш реальный токен API
 
 
 # Фикстура для общих заголовков авторизации
