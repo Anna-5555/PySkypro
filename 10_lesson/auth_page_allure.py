@@ -15,8 +15,10 @@ class AuthPage:
         """
         Функция вводит логин и пароль пользователя для авторизации
         """
-        self._driver.find_element(By.CSS_SELECTOR, '#user-name').send_keys(username)
-        self._driver.find_element(By.CSS_SELECTOR, '#password').send_keys(password)
+        self._driver.find_element(
+            By.CSS_SELECTOR, '#user-name').send_keys(username)
+        self._driver.find_element(
+            By.CSS_SELECTOR, '#password').send_keys(password)
 
     @allure.step("Клик по кнопке 'Login' для авторизации")
     def login_button(self):

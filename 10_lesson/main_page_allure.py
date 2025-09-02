@@ -15,13 +15,17 @@ class MainPage:
         """
         Функция находит и кладет товары в корзину
         """
-        self._driver.find_element(By.CSS_SELECTOR, '#add-to-cart-sauce-labs-backpack').click()
-        self._driver.find_element(By.CSS_SELECTOR, '#add-to-cart-sauce-labs-bolt-t-shirt').click()
-        self._driver.find_element(By.CSS_SELECTOR, '#add-to-cart-sauce-labs-onesie').click()
+        self._driver.find_element(
+            By.CSS_SELECTOR, '#add-to-cart-sauce-labs-backpack').click()
+        self._driver.find_element(
+            By.CSS_SELECTOR, '#add-to-cart-sauce-labs-bolt-t-shirt').click()
+        self._driver.find_element(
+            By.CSS_SELECTOR, '#add-to-cart-sauce-labs-onesie').click()
 
     @allure.step("Переход в корзину")
     def go_to_cart(self):
         """
         Функция для перехода в корзину
         """
-        self._driver.find_element(By.CSS_SELECTOR, '.shopping_cart_link').click()
+        self._driver.find_element(
+            By.CSS_SELECTOR, '.shopping_cart_link').click()

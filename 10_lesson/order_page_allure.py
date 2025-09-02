@@ -15,9 +15,12 @@ class OrderPage:
         """
         Функция вводит имя, фамилию и почтовый индекс пользователя
         """
-        self._driver.find_element(By.CSS_SELECTOR, '#first-name').send_keys(first_name)
-        self._driver.find_element(By.CSS_SELECTOR, '#last-name').send_keys(last_name)
-        self._driver.find_element(By.CSS_SELECTOR, '#postal-code').send_keys(code)
+        self._driver.find_element(
+            By.CSS_SELECTOR, '#first-name').send_keys(first_name)
+        self._driver.find_element(
+            By.CSS_SELECTOR, '#last-name').send_keys(last_name)
+        self._driver.find_element(
+            By.CSS_SELECTOR, '#postal-code').send_keys(code)
 
     @allure.step("Клик по кнопке 'Continue'")
     def button_continue(self):
@@ -31,5 +34,6 @@ class OrderPage:
         """
         Функция находит итоговую сумму заказа и возвращает сумму заказа
         """
-        return  self._driver.find_element(By.CSS_SELECTOR, '.summary_total_label').text.replace('Total: ', '')
-    
+        return self._driver.find_element(
+            By.CSS_SELECTOR, '.summary_total_label').text.replace(
+            'Total: ', '')
