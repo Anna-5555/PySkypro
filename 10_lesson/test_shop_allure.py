@@ -10,7 +10,6 @@ from order_page_allure import OrderPage
 
 import allure
 
-
 @pytest.fixture
 def driver():
     """
@@ -31,7 +30,7 @@ def driver():
 @allure.severity(allure.severity_level.CRITICAL)
 def test_shop(driver):
     """
-    Тест проверяет работау магазина.
+    Тест проверяет работу магазина.
     :param driver: WebDriver — объект драйвера, переданный фикстурой
     """
 

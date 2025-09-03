@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
-import allure
-
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
 class OrderPage:
     def __init__(self, driver):
@@ -10,7 +10,6 @@ class OrderPage:
         """
         self._driver = driver
 
-    @allure.step("Ввод имени, фамилии, индекса пользователя ")
     def information_of_buyer(self, first_name: str, last_name: str, code: str):
         """
         Функция вводит имя, фамилию и почтовый индекс пользователя
@@ -22,14 +21,12 @@ class OrderPage:
         self._driver.find_element(
             By.CSS_SELECTOR, '#postal-code').send_keys(code)
 
-    @allure.step("Клик по кнопке 'Continue'")
     def button_continue(self):
         """
         Нажимает кнопку 'Continue'
         """
         self._driver.find_element(By.CSS_SELECTOR, '#continue').click()
 
-    @allure.step("Получение итоговой суммы заказа")
     def get_result(self) -> str:
         """
         Функция находит итоговую сумму заказа и возвращает сумму заказа

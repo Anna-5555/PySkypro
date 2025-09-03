@@ -1,5 +1,4 @@
 from selenium.webdriver.common.by import By
-import allure
 
 
 class CartPage:
@@ -10,7 +9,6 @@ class CartPage:
         """
         self._driver = driver
 
-    @allure.step("Клиr по кнопке 'Checkout' ")
     def checkout(self):
         """
         Функция для нажатия на кнопку 'Checkout' и
